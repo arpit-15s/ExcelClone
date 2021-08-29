@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-size: 14;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.Container {
+    height: 100vh;
+}
+
+.Title-Bar {
+    height: 5vh;
+    background-color: #107C41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.Menu-Bar {
+    height: 5vh;
+    background-color: #107C41;
+    display: flex;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+}
+
+.menu-item.selected {
+    background-color: rgb(231, 231, 231);
+    color: #107C41;
+}
+
+.menu-item:hover {
+    background-color: #0e6836;
+    cursor: pointer;
+}
+
+.menu-item.selected:hover {
+    cursor: default;
+    background-color: rgb(231, 231, 231);
+}
+
+.Menu-Icon-Bar {
+    height: 6vh;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    align-items: center;
+}
+.selector {
+    height: 25px;
+    width: 150px;
+}
+
+.menu-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+}
+
+.menu-icon:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.menu-icon.selected {
+    background-color: lightgray;
+}
+
+.Formula-Bar {
+    background-color: rgb(231, 231, 231);
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.formula-editor {
+    background-color: white;
+    height: 80%;
+    margin-left: 1px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.fx {
+    width: 30px;
+    height: 80%;
+    margin-left: 20px;
+    padding-right: 4px;
+    padding-left: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.cell-address {
+    width: 70px;
+}
+
+.formula-input {
+    width: calc(100% - 100px);
+    outline-color: #107C41;
+}
+.Data-Container {
+    height: 73vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.select-all {
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgray;
+}
+
+.column-name-container {
+    width: calc(100vw - 30px);
+    height: 30px;
+    border: 1px solid lightgray;
+    display: flex;
+    overflow: hidden;
+}
+
+.column-number {
+    min-width: 100px;
+    border-right: 1px solid lightgray;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-name-container {
+    width: 30px;
+    height: calc(73vh - 30px);
+    border: 1px solid lightgray;
+    overflow: hidden;
+}
+
+.row-number {
+    min-height: 25px;
+    border-bottom: 1px solid lightgray;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-cell-container {
+    width: calc(100vw - 30px);
+    height: calc(73vh - 30px);
+    border: 1px solid lightgray;
+    overflow: scroll;
+}
+
+.cell-row {
+    display: flex;
+}
+
+.input-cell {
+    min-width: 100px;
+    min-height: 25px;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    outline-color: #107C41;
+}
+
+.input-cell.selected {
+    border: 2px solid #107C41;
+}
+
+.Sheet-Bar {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.scroller {
+    padding-left: 10px;
+    width: 70px;
+}
+
+.icon-left-scroll, .icon-right-scroll{
+    font-size: 30px;
+}
+
+.icon-left-scroll:hover, .icon-right-scroll:hover { 
+    background-color: lightgray;
+    cursor: pointer;
+}
+.icon-add {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40px;
+}
+
+.icon-add:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.sheet-tab-container {
+    width: calc(100w - 110px);
+    display: flex;
+}
+
+.sheet-tab { 
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-right: 1px solid lightgray;
+}
+
+.sheet-tab:hover {
+    cursor: default;
+}
+
+.icon-add {
+    color: #107c41;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40px;
+}
+.sheet-tab.selected{
+    border-bottom: 4px solid#107c41;
+}
+
+.input-cell.top-cell-selected{
+    border-top: none;
+}
+
+.input-cell.bottom-cell-selected{
+    border-bottom: 1px solid lightgray;
+}
+
+.input-cell.right-cell-selected{
+    border-right: 1px solid lightgray;
+}
+
+.input-cell.left-cell-selected{
+    border-left: none;
+}
